@@ -2,8 +2,8 @@
 layout: post
 title: "CoprHD as a SDS Controller"
 description: ""
-category: PythonNotes
-tags:  [Python]
+category: CoprHD
+tags:  [CoprHD]
 ---
 {% include JB/setup %}
 
