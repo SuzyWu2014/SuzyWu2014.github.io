@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SSH Configuration Nodes"
+title: "SSH Configuration Notes"
 description: ""
 category: Linux
 tags:  [SSH]
@@ -10,9 +10,11 @@ tags:  [SSH]
 # Public key vs Private Key 
 公钥 (public key)：提供给远程主机进行数据加密的行为，也就是说，大家都能取得你的公钥来将数据加密的意思；
 私钥 (private key)：远程主机使用你的公钥加密的数据，在本地端就能够使用私钥来进行解密。由于私钥是这么的重要， 因此私钥是不能够外流的！只能保护在自己的主机上。
+
 # Line by line explanation: /etc/ssh/sshd_config
+
 [root@www ~]# vim /etc/ssh/sshd_config
-```
+```bash 
 # 1. 关于 SSH Server 的整体设定，包含使用的 port 啦，以及使用的密码演算方式
 # Port 22
 # SSH 预设使用 22 这个port，也可以使用多个port，即重复使用 port 这个设定项目！
