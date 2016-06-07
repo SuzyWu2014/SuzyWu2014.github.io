@@ -33,11 +33,11 @@ export PATH
 # Different ways to run scripts(source, sh script, ./script)
 
 ## sh script 
-!(https://SuzyWu2014.github.io/assets/images/non-source.gif)
+!(https://github.com/SuzyWu2014/SuzyWu2014.github.io/tree/master/assets/images/non-source.gif)
 script run as a child bash, when it completes, all the variable defined in the child bash will be removed.
 
 ## source script 
-!(https://SuzyWu2014.github.io/assets/images/source.gif)
+!(https://github.com/SuzyWu2014/SuzyWu2014.github.io/tree/master/assets/images/source.gif)
 run in parent bash, all variable remains.
 
 # Condition
