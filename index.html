@@ -1,36 +1,113 @@
 ---
-layout: page
-description: "Where I write."
+layout: default
+title: Shujin Wu | Home
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.description %}
-        <h3 class="post-subtitle">
-            {{ post.description }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+<!-- Banner -->
+<section id="banner">
+	<div class="inner">
+		<div class="logo"><span class="icon fa-diamond"></span></div>
+		<h2>Shujin Wu</h2>
+		<p>CS Grad Student | Software Engineer</p>
+	</div>
+</section>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+<!-- Wrapper -->
+<section id="wrapper">
+
+	<!-- One -->
+		<section id="one" class="wrapper spotlight style1">
+			<div class="inner">
+				<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+				<div class="content">
+					<h2 class="major">About</h2>
+					<p>Hi, my name is Shujin Wu.</br>
+					A grad student in CS at Oregon State University.</br>
+					I am passionate about coding and life.
+					</p>
+					<a href="#" class="special">Learn more</a>
+				</div>
+			</div>
+		</section>
+
+	<!-- Two -->
+		<section id="two" class="wrapper alt spotlight style2">
+			<div class="inner">
+				<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+				<div class="content">
+					<h2 class="major">résumé</h2>
+					<p>I am graduating in Dec. 2016, and I am currently actively seeking internship and full-time job opportunities.</br>
+						You can also find my résumé here.
+					</p>
+					<a href="resume.html" class="special">Learn more</a>
+				</div>
+			</div>
+		</section>
+
+	<!-- Three -->
+		<section id="three" class="wrapper spotlight style3">
+			<div class="inner">
+				<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+				<div class="content">
+					<h2 class="major">Resources</h2>
+					<p>Don't waste your time search for the same thing.</br>
+					Here is where I collect the resources.
+					 </p>
+					<a href="#" class="special">Learn more</a>
+				</div>
+			</div>
+		</section>
+
+	<!-- four -->
+		<section id="four" class="wrapper alt spotlight style2">
+			<div class="inner">
+				<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
+				<div class="content">
+					<h2 class="major">Tech Blogs</h2>
+					<p>comprehension makes information become knowledge.</br>
+						Here is where I take notes.
+					</p>
+					<a href="#" class="special">Learn more</a>
+				</div>
+			</div>
+		</section>
+	<!-- Five -->
+		<section id="five" class="wrapper alt style1">
+			<div class="inner">
+				<h2 class="major">What interests me:</h2>
+				<p></p>
+				<section class="features"> 
+					<article>
+						<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
+						<h3 class="major">Music</h3>
+						<!-- <p>I am open to all kinds of music genres, but Folk and Rock music are my favorite. </p>
+						<a href="#" class="special">Learn more</a> -->
+					</article>
+					<article>
+						<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+						<h3 class="major">Travel</h3>
+						<!-- <p> 
+						</p>
+						<a href="#" class="special">Learn more</a> -->
+					</article>
+					<article>
+						<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+						<h3 class="major">Photography</h3>
+						<!-- <p></p>
+						<a href="#" class="special">Learn more</a> -->
+					</article>
+					<article>
+						<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+						<h3 class="major">Anything new to me </h3>
+						<!-- <p></p>
+						<a href="#" class="special">Learn more</a> -->
+					</article>
+				</section> 
+				<ul class="actions">
+					<li><a href="#" class="button">Back to Top</a></li>
+				</ul>
+			</div>
+		</section>
+
+
+

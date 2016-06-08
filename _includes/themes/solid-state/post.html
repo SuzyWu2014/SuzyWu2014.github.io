@@ -1,0 +1,14 @@
+<section id="wrapper">
+    <header>
+        <div class="inner">
+            <h2>{{ page.title }}</h2> 
+            <p>Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</p> 
+        </div>
+    </header>
+    <div class="wrapper">
+         <div class="inner">
+         {{ content }}
+         </div>
+    </div>  
+</section>
+

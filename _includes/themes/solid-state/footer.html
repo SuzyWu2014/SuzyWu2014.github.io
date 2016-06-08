@@ -1,0 +1,29 @@
+
+<!-- Footer -->
+<section id="footer">
+    <div class="inner">
+        <h2 class="major">Get in touch</h2>
+        <p></p>
+        <ul class="contact">
+            <li class="fa-envelope"><a href="#">shujin_dot_wu_dot_osu@gmail_dot_com</a></li>
+            {% if site.github_username %}
+            <li class="fa-github"><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>
+            {% endif %}
+            <li class="fa-linkedin"><a href="https://www.linkedin.com/in/shujinwu">LinkedIn</a></li>
+        </ul>
+        <ul class="copyright">
+            <li>Copyright &copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</li>
+        </ul>
+    </div>
+</section>
+
+</div>
+<!-- Scripts -->
+<script src="{{ ASSET_PATH }}/js/skel.min.js"></script>
+<script src="{{ ASSET_PATH }}/js/jquery.min.js"></script>
+<script src="{{ ASSET_PATH }}/js/jquery.scrollex.min.js"></script>
+<script src="{{ ASSET_PATH }}/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="{{ ASSET_PATH }}/js/main.js"></script>
+
+{% include JB/analytics %}

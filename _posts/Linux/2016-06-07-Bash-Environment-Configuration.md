@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bash Environment Configuration"
+title: "Bash - Environment Configuration"
 description: ""
 category: Linux
 tags:  [Bash]

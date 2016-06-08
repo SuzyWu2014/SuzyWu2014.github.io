@@ -1,22 +1,34 @@
 ---
-layout: page
-title: Categories
+layout: default
+title: Blogs
 header: Posts By Category
 group: navigation
 ---
 {% include JB/setup %}
+<section id="banner">
+	<div class="inner"> 
+		<h2> Notes</h2>
+	</div>
+</section>
 
-<ul class="tag_box inline">
-  {% assign categories_list = site.categories %}
-  {% include JB/categories_list %}
-</ul>
 
 
-{% for category in site.categories %} 
-  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
-  <ul>
-    {% assign pages_list = category[1] %}  
-    {% include JB/pages_list %}
-  </ul>
-{% endfor %}
+<!-- Content -->
+<div class="wrapper">
+<!-- 	<div class="inner">
+		<div class="row uniform"> 
+	  	{% assign categories_list = site.categories %}
+	  	{% include JB/categories_list %}
+		</div> 
+	</div> -->
+	<div class="inner">
+		{% for category in site.categories %} 
+		  <h3 class="major" id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h3>
+		  <ul>
+		    {% assign pages_list = category[1] %}  
+		    {% include JB/pages_list %}
+		  </ul>
+		{% endfor %}
+	</div>
+</div>
 

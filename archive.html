@@ -1,10 +1,26 @@
 ---
-layout: page
+layout: default
 title : Archive
 header : Post Archive
 group: navigation
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+<section id="banner">
+	<div class="inner"> 
+		<h2> Archive</h2>
+	</div>
+</section>
+
+<!-- Content -->
+<div class="wrapper">
+	<div class="inner">  
+		  <h3 class="major"></h3>
+		  <ul>
+		   {% assign posts_collate = site.posts %}
+			{% include JB/posts_collate %}
+		  </ul>
+		 
+	</div>
+</div>
+
