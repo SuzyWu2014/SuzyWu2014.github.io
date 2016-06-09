@@ -15,12 +15,12 @@ group: navigation
 
 <!-- Content -->
 <div class="wrapper">
-<!-- 	<div class="inner">
-		<div class="row uniform"> 
+	<div class="inner">
+		<div class="tag_box inline"> 
 	  	{% assign categories_list = site.categories %}
 	  	{% include JB/categories_list %}
 		</div> 
-	</div> -->
+	</div>
 	<div class="inner">
 		{% for category in site.categories %} 
 		  <h3 class="major" id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h3>
