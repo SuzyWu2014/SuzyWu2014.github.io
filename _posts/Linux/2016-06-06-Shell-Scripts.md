@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BASH - Shell Scripts"
+title: "Bash - Shell Scripts"
 description: ""
 category: Linux
 tags:  [Bash]

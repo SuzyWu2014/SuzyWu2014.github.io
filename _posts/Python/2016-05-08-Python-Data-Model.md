@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Python Data Model"
+title: "Python - The Data Model"
 description: ""
-category: PythonNotes
+category: Python
 tags:  [Python]
 ---
 {% include JB/setup %}

@@ -11,6 +11,7 @@ tags:  [SDS]
 
 EMC ScaleIO is a software-defined solution that uses your existing hardware or EMC servers to turn existing DAS storage into shared block storage.
 Here are few facts:
+
 - A Software defined storage (SDS) product from EMC
 - It creates a server-based storage area network(SAN) from local application server storage
 - It converts direct-attached storage into shared block storage
@@ -41,6 +42,7 @@ Here are few facts:
 * Need for massively shared data
         
 ### What is SDI (Software Defined Infrastructure)
+
 #### Service Assurance (保证)
 * Automatically deploy and maintains:
     + Policies 
@@ -61,12 +63,14 @@ Here are few facts:
 
 ### SDS - A Key Component of SDI
 SDS is a framework that  delivers a scalable, cost-effective solution to serve the needs of tomorow's data center
+
 - Abstracting software from hardware, providing flexibility& scalability
 - Aggregating(汇总) diverse provider solutions, increasing flexibility and drive down costs
 - Provisioning resources dynamically (Pay-as-you-grow) increasing efficiency
 - Orchestrating application access to diverse atorage systems through Service Level Agreements(SLAs), increasing flexibility and handle data complexity
     
 ### Note:
+
 #### Service assurance (SA)
 - a procedure or set of procedures intended to optimize performance 
 - provide management guidance in communications networks, media services and end-user applications. 

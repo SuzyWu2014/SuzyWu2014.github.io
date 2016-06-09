@@ -13,11 +13,13 @@ This article summarizes the current security solutions for  Docker containers. I
 Before we jump into the security solutions, let's exploring some of the issues surrounding the security of container-based systems. Generally speaking, there are three types of attack models, which are caused by the vulnerabilities of the container-based systems.
 
 ### Types of Attacks:
+
 - Container compromise: result in illegitimate data access and affect control flow of instructions
 - DoS(Deny of Services): disturb normal operation of the host or other container
 - Privilege escalation: obtain a provilege which is not originally granted to the container
 	
 ### Disclosed Vulnerabilities:
+
 - Namespacing Issues
 Docker containers utilize Kernel namespaces to provide a certain level of isolation. However, not all resources are namespaced:
 	* UID: Causing "root" user vulnerability
@@ -54,6 +56,7 @@ Containers can leverage on Linux Namespace and Control group to provide a certai
 
 #### Namespace 
 Docker provides process, filesystem, device, IPC and net- work isolations by using the related namespace. 
+
 - Process Isolation: Docker utilizes PID namespace to separate container processes from the host as well as other containers, so that processes in a container can’t observe or do anything to the other processes running in the host or in other containers. 
 - Filesystem Isolation: Use mount namespace to ensure that for each mount space, a container only have impact inside the container. 
 - Device Isolation: The container cannot access to any devices unless it’s privileged. 
@@ -97,17 +100,19 @@ Just like what is recommended for Windows system, it's recommended to apply upda
 
 ### Image Provenance
 To safely use images, you need to have guarantees about their provenance: 
-	+ where they came from
-	+ who created them
-	+ essure you are getting the exactly the image you want
+
+- where they came from
+- who created them
+- essure you are getting the exactly the image you want
 
 There are three solutions  for image provenace: secure hash, secure signing and verification infrastructure and use Dockerfile properly.
-	+ Secure Hash:  Secure Hash is like a fingerprint for data. It's a small string that is unique to given data. If you have a secure hash for some data and the data itself, you can recalculate the hash for the data then compare.  In docker, it's called docker digest, a SHA-256 hash of a filesystem layer or manifest(a metadata file describing the parts of a image, constaining a list of constituent layer identified by digest)
-	+ Secure Signing and Verification Infrastructure:  Data could be changed if it transits over untrustworthy channels(e.g. HTTP), so we need to ensure we are publishing and accessing content in a trustworthy and secure manner. Notaty project is an on-going secure signing and verification infrastructure project in docker, which compares a checksum for a downloaded file with the checksum in Notary's trusted collection for the file source (e.g. docker.com ). For more details, please check https://github.com/docker/notary
-	+ Dockerfile:  Not as we expected, dockerfile is likely to produce different images over time, so as time goes, it's hard to be sure what is in your images. To use docker properly, you would:
-		- Always specify a tag in FROM instruction, and use digest to pull the exactly same image each time
-		- Provide version numbers when installing software from package managers. However, since package dependencies can change over time, sometime we need to use tools (e.g. aptly) to take a snapshot of the repository
-		- Verify any software or data download from the internet by checksum or cryptographic.
+
+- Secure Hash:  Secure Hash is like a fingerprint for data. It's a small string that is unique to given data. If you have a secure hash for some data and the data itself, you can recalculate the hash for the data then compare.  In docker, it's called docker digest, a SHA-256 hash of a filesystem layer or manifest(a metadata file describing the parts of a image, constaining a list of constituent layer identified by digest)
+- Secure Signing and Verification Infrastructure:  Data could be changed if it transits over untrustworthy channels(e.g. HTTP), so we need to ensure we are publishing and accessing content in a trustworthy and secure manner. Notaty project is an on-going secure signing and verification infrastructure project in docker, which compares a checksum for a downloaded file with the checksum in Notary's trusted collection for the file source (e.g. docker.com ). For more details, please check https://github.com/docker/notary
+- Dockerfile:  Not as we expected, dockerfile is likely to produce different images over time, so as time goes, it's hard to be sure what is in your images. To use docker properly, you would:
+	* Always specify a tag in FROM instruction, and use digest to pull the exactly same image each time
+	* Provide version numbers when installing software from package managers. However, since package dependencies can change over time, sometime we need to use tools (e.g. aptly) to take a snapshot of the repository
+	* Verify any software or data download from the internet by checksum or cryptographic.
 
 END: This article is an glance of the current security solutions for docker containers, if you are interested, please refer to the reference articles for more details.
 	

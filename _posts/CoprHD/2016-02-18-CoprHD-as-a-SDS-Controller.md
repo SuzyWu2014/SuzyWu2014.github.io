@@ -33,6 +33,7 @@ CoprHD  is an open source software defined storage (SDS) controller that discove
 ## Concepts: SDS Controller
 
 SDS Controller enables granular(粒化) monitoring and QoS enforcement of storage data types(Volume, shares, containers)
+
 - Discover storage systems and capabilities. e.g. performance, capacity, tiers(层). etc
 - Administrators composed  virtual storage pools
 - Application  request storages services using  SLOs
@@ -43,14 +44,15 @@ SDS Controller enables granular(粒化) monitoring and QoS enforcement of storag
 ### Note:
 
 #### Storage Quality of Service (QoS):
-
 Storage QoS is a new cluster-wide feature in clustered Data ONTAP 8.2 that requires no additional license. It allows users to set throughput limits and/or monitor IOPS or MB/s on the storage object. A storage object can be:
+
 - A Vserver with FlexVol volumes
 - A FlexVol volumeQoS workload
 - A LUN
 - A file (typically represents a virtual machine)
 
 #### Service Level Agreement (SLA) :
+
 - A part of a service contract where a service is formally defined.
 - Refer to the  contracted delivery time (of the service or perfromance)
 - Include :
@@ -58,11 +60,13 @@ Storage QoS is a new cluster-wide feature in clustered Data ONTAP 8.2 that requi
     + MTTR: mean time to repair or mean time ti recovery
 
 #### Service Level Objective (SLO):
+
 - a key element of SLA between a service provider and a customer
 - a means of measuring the performance of the service provider
 - avoiding disputes(争议) between the two parties based on misunderstanding.
 
 ## References:
+
 [1] Delivering a standards based SDS Framework with an Open Stack SDS Controller Implementation
 [2] Introduction to CoprHD: An Open Source Software Defined Storage Controller
 [3] A short Guild to the CoprHD Architecture
