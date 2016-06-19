@@ -40,7 +40,7 @@ tags:  [Python,Python Data Structure]
 ```python
 >>> colors = ['black', 'white']
 >>> sizes = ['S', 'M', 'L']
->>> tshirts = [(color, size) for color in colors for size in sizes] 
+>>> tshirts = [(color, size) for color in colors for size in sizes]
 >>> tshirts
 [('black', 'S'), ('black', 'M'), ('black', 'L'), ('white', 'S'),
 ('white', 'M'), ('white', 'L')]
@@ -53,10 +53,10 @@ tags:  [Python,Python Data Structure]
                            for rank in self.ranks]
 ```
 
-### Variable Leak in Python `2.x` but no longer in python `3.x` 
-Python `2.x` 
-    
-```python 
+### Variable Leak in Python `2.x` but no longer in python `3.x`
+Python `2.x`
+
+```python
 >>> x = 'my precious'
 >>> dummy = [x for x in 'ABC']
 >>> x
