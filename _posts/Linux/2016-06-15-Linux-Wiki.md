@@ -42,3 +42,5 @@ chsh -s /bin/bash
 brew tree
 tree /dir
 ```
+
+# if
