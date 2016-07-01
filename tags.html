@@ -9,15 +9,15 @@ group: navigation
 {% assign sorted_tags = site.tags | sort %}
 
 <ul class="tag_box inline">
-  {% assign tags_list = sorted_tags %}  
+  {% assign tags_list = sorted_tags %}
   {% include JB/tags_list %}
 </ul>
 
 
-{% for tag in sorted_tags %} 
+{% for tag in sorted_tags %}
   <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
   <ul>
-    {% assign pages_list = tag[1] %}  
+    {% assign pages_list = tag[1] %}
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
