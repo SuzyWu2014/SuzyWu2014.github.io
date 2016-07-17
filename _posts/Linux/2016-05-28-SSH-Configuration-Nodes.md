@@ -7,14 +7,14 @@ tags:  [SSH]
 ---
 {% include JB/setup %}
 
-# Public key vs Private Key 
+# Public key vs Private Key
 公钥 (public key)：提供给远程主机进行数据加密的行为，也就是说，大家都能取得你的公钥来将数据加密的意思；
 私钥 (private key)：远程主机使用你的公钥加密的数据，在本地端就能够使用私钥来进行解密。由于私钥是这么的重要， 因此私钥是不能够外流的！只能保护在自己的主机上。
 
 # Line by line explanation: /etc/ssh/sshd_config
 
 [root@www ~]# vim /etc/ssh/sshd_config
-```bash 
+```bash
 # 1. 关于 SSH Server 的整体设定，包含使用的 port 啦，以及使用的密码演算方式
 # Port 22
 # SSH 预设使用 22 这个port，也可以使用多个port，即重复使用 port 这个设定项目！
@@ -26,7 +26,7 @@ Protocol 2
 # 如果想要支持旧版 V1 ，就得要使用『 Protocol 2,1 』才行。
 
 # ListenAddress 0.0.0.0
-# 监听的主机适配器！举个例子来说，如果你有两个 IP，分别是 192.168.1.100 及 
+# 监听的主机适配器！举个例子来说，如果你有两个 IP，分别是 192.168.1.100 及
 # 192.168.100.254，假设你只想要让 192.168.1.100 可以监听 sshd ，那就这样写：
 # 『 ListenAddress 192.168.1.100 』默认值是监听所有接口的 SSH 要求
 
@@ -157,4 +157,4 @@ Subsystem       sftp    /usr/lib/ssh/sftp-server
 # 不过如果是在内网互连，这项目设定为 no 会让联机达成速度比较快。
 ```
 
-# /etc/hosts.allow 及 /etc/hosts.deny 
+# /etc/hosts.allow 及 /etc/hosts.deny
