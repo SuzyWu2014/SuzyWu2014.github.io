@@ -9,8 +9,8 @@ tags:  [Snapshot]
 
 # Summary
 + Snapshots are not backups, the vm is running on the most current snapshot.
-+ Snapshots only copies the delta disks, current state of the vm = original disk files + change log in the snapshot files 
-+ Size of the delta files will grow to the same size of the original base disk file 
++ Snapshots only copies the delta disks, current state of the vm = original disk files + change log in the snapshot files
++ Size of the delta files will grow to the same size of the original base disk file
 + Best practice: only 2-3 snapshots in a chain and not last more than 24-72 hours.
 
 You can also find the original artical below or [Right Here](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1025279)
