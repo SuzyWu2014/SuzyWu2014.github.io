@@ -18,7 +18,7 @@ tags:  [BASH]
 + `2>>`：以累加的方法将『错误的数据』输出到指定的文件或装置上；
 
 # `/dev/null` 垃圾桶黑洞装置与特殊写
-```bash 
+```bash
 将错误的数据丢弃，屏幕上显示正确的数据
 [dmtsai@www ~]$ find /home -name .bashrc 2> /dev/null
 /home/dmtsai/.bashrc  <==只有 stdout 会显示到屏幕上， stderr 被丢弃了
@@ -34,7 +34,7 @@ tags:  [BASH]
 ```
 
 # standard input ： `<` 与 `<<`
-```bash 
+```bash
 用 stdin 取代键盘的输入以创建新文件的简单流程
 [root@www ~]# cat > catfile < ~/.bashrc
 [root@www ~]# ll catfile ~/.bashrc
