@@ -18,7 +18,7 @@ Here are few facts:
 - It uses exsiting host-based internal storage to create a scalable, high-performance, low-cost server SAN
 - ScaleIO can scale from three compute/storage nodes to over 1,000 nodes
 - It can drive up to 240 million IOPS of performance.
-- ScaleIO can be deployed 
+- ScaleIO can be deployeds
     + as storage only
     + as a converged infrastructure combining storage, computational and network resources into a single block
 
@@ -40,13 +40,13 @@ Here are few facts:
     + Limited scalability
     + Not flexiable for innovation
 * Need for massively shared data
-        
+
 ### What is SDI (Software Defined Infrastructure)
 
 #### Service Assurance (保证)
 * Automatically deploy and maintains:
-    + Policies 
-    + intelligent monitoring to trigger dynamic provisioning 
+    + Policies
+    + intelligent monitoring to trigger dynamic provisioning
     + service assurance as application
 
 #### Provisioning Management
@@ -68,12 +68,12 @@ SDS is a framework that  delivers a scalable, cost-effective solution to serve t
 - Aggregating(汇总) diverse provider solutions, increasing flexibility and drive down costs
 - Provisioning resources dynamically (Pay-as-you-grow) increasing efficiency
 - Orchestrating application access to diverse atorage systems through Service Level Agreements(SLAs), increasing flexibility and handle data complexity
-    
+
 ### Note:
 
 #### Service assurance (SA)
-- a procedure or set of procedures intended to optimize performance 
-- provide management guidance in communications networks, media services and end-user applications. 
+- a procedure or set of procedures intended to optimize performance
+- provide management guidance in communications networks, media services and end-user applications.
 - Service assurance is an all-encompassing paradigm that revolves around the idea that maximizing customer satisfaction inevitably maximizes the long-term profitability of an enterprise.
 
 ### References:
