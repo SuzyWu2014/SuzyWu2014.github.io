@@ -14,7 +14,7 @@ CoprHD  is an open source software defined storage (SDS) controller that discove
     + Namely, it centralizes and transforms multivendor storage into a simple and extensible platform.
     +  e.g. traditional, scale-out, SAN/IP networking, host config, across one or more DCs for new and existing storage.
 - Classify storage using policies20
-    + abstracts the resources into virtual storage arrays and pools 
+    + abstracts the resources into virtual storage arrays and pools
     + capable of block, object and file storage provider
 - Self-service provisioning via REST APIs and catalogs
 - Integrate with traditional, cloud, cloud native computing stacks
@@ -25,10 +25,9 @@ CoprHD  is an open source software defined storage (SDS) controller that discove
     + Host attach, migration and tech refresh
 
 ### Note:
-- CoprHD itself does not provide storage. 
-- It holds an inventory of all storage devices in the data center and understands their connectivity. 
+- CoprHD itself does not provide storage.
+- It holds an inventory of all storage devices in the data center and understands their connectivity.
 - It allows the storage administrator to group these resources into either virtual arrays or virtual pools
-    
 
 ## Concepts: SDS Controller
 
