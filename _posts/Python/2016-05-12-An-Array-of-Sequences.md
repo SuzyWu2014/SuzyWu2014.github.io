@@ -11,11 +11,11 @@ tags:  [Python,Python Data Structure]
 
 ## Container versus Flat
 
-+ Container sequences - can hold items of different types 
-    - list, tuple, and collections.deque 
++ Container sequences - can hold items of different types
+    - list, tuple, and collections.deque
 + Flat sequences - hold items of one type (within its own memory space, limited to primitive values)
-    - str, bytes, bytearray, memoryview, and array.array 
-    
+    - str, bytes, bytearray, memoryview, and array.array
+
 ## Mutable versus Immutable
 
 + Mutable sequences
@@ -29,7 +29,7 @@ tags:  [Python,Python Data Structure]
 
 ```python
 >>> symbols = '$¢£¥€¤'
->>> codes = [ord(symbol) for symbol in symbols] 
+>>> codes = [ord(symbol) for symbol in symbols]
 >>> codes
 [36, 162, 163, 165, 8364, 164]
 ```
@@ -65,9 +65,9 @@ Python `2.x`
 
 Python `3.x`
 
-```python 
+```python
 >>> x = 'ABC'
->>> dummy = [ord(x) for x in x] 
+>>> dummy = [ord(x) for x in x]
 >>> x
 'ABC'
 >>> dummy
@@ -76,8 +76,8 @@ Python `3.x`
 
 ### Efficiency: listcomp is the best
 example `code`:
-    
-```python 
+
+```python
 import timeit
 
 TIMES = 10000
@@ -89,7 +89,7 @@ def non_ascii(c):
 """
 
 def clock(label, cmd):
-    res = timeit.repeat(cmd, setup=SETUP, number=TIMES) 
+    res = timeit.repeat(cmd, setup=SETUP, number=TIMES)
     print(label, *('{:.3f}'.format(x) for x in res))
 
 clock('listcomp        :', '[ord(s) for s in symbols if ord(s) > 127]')
@@ -97,10 +97,10 @@ clock('listcomp + func :', '[ord(s) for s in symbols if non_ascii(ord(s))]')
 clock('filter + lambda :', 'list(filter(lambda c: c > 127, map(ord, symbols)))')
 clock('filter + func   :', 'list(filter(non_ascii, map(ord, symbols)))')
 ```
-    
+
 result:
 
-```python 
+```python
 listcomp        : 0.015 0.015 0.015
 listcomp + func : 0.021 0.024 0.023
 filter + lambda : 0.022 0.023 0.024
@@ -119,7 +119,7 @@ Initializing a tuple and an array from a generator expression
 >>> array.array('I', (ord(symbol) for symbol in symbols)) array('I', [36, 162, 163, 165, 8364, 164])
 >>> colors = ['black', 'white']
 >>> sizes = ['S', 'M', 'L']
->>> for tshirt in ('%s %s' % (c, s) for c in colors for s in sizes): 
+>>> for tshirt in ('%s %s' % (c, s) for c in colors for s in sizes):
 ...     print(tshirt)
 ...
 black S
@@ -140,9 +140,9 @@ A genexp saves memory because it yields items one by one using the iterator prot
 
 Tuples hold records: each item in the tuple holds the data for one field and the position of the item gives its meaning.
 
-```python 
+```python
 >>> lax_coordinates = (33.9425, -118.408056)
->>> city, year, pop, chg, area = ('Tokyo', 2003, 32450, 0.66, 8014) 
+>>> city, year, pop, chg, area = ('Tokyo', 2003, 32450, 0.66, 8014)
 >>> traveler_ids = [('USA', '31195855'), ('BRA', 'CE342567'),
 ... ('ESP', 'XDA205856')]
 >>> for passport in sorted(traveler_ids):
@@ -153,6 +153,6 @@ ESP/XDA205856
 USA/31195855
 ```
 
-Tuple Unpacking 
+Tuple Unpacking
 
 
