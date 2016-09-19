@@ -7,20 +7,20 @@ tags:  [Bash]
 ---
 {% include JB/setup %}
 
-# How shell scripts are interpreted 
-1. from top to bottom, from left to right 
+# How shell scripts are interpreted
+1. from top to bottom, from left to right
 2. spaces/[tab] spaces between commands, options and arguments are ignored
 3. blank lines are ignored
 4. run the command when a `[Enter] (CR)` is read
 5. `#` comments
 6. `\[Enter]` break long line
 
-# Script Header 
+# Script Header
 
 ```bash
-#!/bin/bash -->  ~/.bashrc as env configuration, and use bash to run 
+#!/bin/bash -->  ~/.bashrc as env configuration, and use bash to run
 # Program:
-#      Describe the functionality of the script 
+#      Describe the functionality of the script
 # History: --> modification history
 # 2016/06/06  Author First release
 
@@ -32,17 +32,17 @@ export PATH
 
 # Different ways to run scripts(source, sh script, ./script)
 
-## sh script 
+## sh script
 ![](https://raw.githubusercontent.com/SuzyWu2014/SuzyWu2014.github.io/master/assets/images/non-source.gif)
 script run as a child bash, when it completes, all the variable defined in the child bash will be removed.
 
-## source script 
+## source script
 ![](https://raw.githubusercontent.com/SuzyWu2014/SuzyWu2014.github.io/master/assets/images/source.gif)
 run in parent bash, all variable remains.
 
 # Condition
 
-## test command 
+## test command
 --------------------------------------------------------------------------------------
 1. 关於某个档名的『文件类型』判断，如 `test -e filename` 表示存在否
 + `-e`  该『档名』是否存在？(常用)
@@ -71,7 +71,7 @@ run in parent bash, all variable remains.
 + `-ef` 判断 file1 与 file2 是否为同一文件，可用在判断 hard link 的判定上。 主要意义在判定，两个文件是否均指向同一个 inode 哩！
 
 --------------------------------------------------------------------------------------
-4. 关於两个整数之间的判定，例如 test n1 -eq n2 
+4. 关於两个整数之间的判定，例如 test n1 -eq n2
 + `-eq` 两数值相等 (equal)
 + `-ne` 两数值不等 (not equal)
 + `-gt` n1 大於 n2 (greater than)
@@ -124,7 +124,7 @@ name = "Shujin Wu"
 + `$@`：代表『 "$1" "$2" "$3" "$4" 』之意，每个变量是独立的(用双引号括起来)；
 + `$*`：代表『 "$1c$2c$3c$4" 』，其中 c 为分隔字节，默认为空白键， 所以本例中代表『 "$1 $2 $3 $4" 』之意。
 
-```bash 
+```bash
 echo "The script name is        ==> $0"
 echo "Total parameter number is ==> $#"
 [ "$#" -lt 2 ] && echo "The number of parameter is less than 2.  Stop here." \
@@ -224,8 +224,8 @@ case $1 in
 esac
 ```
 
-# function 
-```bash 
+# function
+```bash
 function fname() {
     程序段
 }
@@ -251,8 +251,8 @@ case $1 in
 esac
 ```
 
-### variables in funciton 
-```bash 
+### variables in funciton
+```bash
 function printit(){
     echo "Your choice is $1"   # 这个 $1 必须要参考底下命令的下达
 }
@@ -277,7 +277,7 @@ esac
 # Loop
 
 ## while do done, until do done
-```bash 
+```bash
 while [ condition ]  <==中括号内的状态就是判断式
 do            <==do 是回圈的开始！
     程序段落
@@ -290,7 +290,7 @@ done
 ```
 
 ## for...do...done
-```bash 
+```bash
 for var in con1 con2 con3 ...
 do
     程序段
