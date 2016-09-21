@@ -225,31 +225,3 @@ page = response.read()
 + In python 3, range() does what xrange() used to do and xrange() does not exist. If you want to write code that will run on both Python 2 and Python 3, you can't use xrange().
 + range() can actually be faster in some cases - eg. if iterating over the same sequence multiple times.  xrange() has to reconstruct the integer object every time, but range() will have real integer objects. (It will always perform worse in terms of memory however)
 + xrange() isn't usable in all cases where a real list is needed. For instance, it doesn't support slices, or any list methods.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
