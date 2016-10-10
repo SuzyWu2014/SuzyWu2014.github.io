@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wiki - Virtualenv "
+title: "Wiki - Common Issues"
 description: ""
 category: Python
 tags:  [Python,Python Data Structure]
