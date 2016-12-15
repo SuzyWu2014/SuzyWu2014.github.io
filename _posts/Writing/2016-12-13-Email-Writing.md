@@ -170,3 +170,6 @@ Attached is the draft xx file. It's still a work in process but I would like to 
 +  since 代替 due to the fact that
 +  用另一封邮件：by my separate email
 
+# Reference
+
+[知乎：哪些神句拯救了你的英文邮件](https://www.zhihu.com/question/34147404)
