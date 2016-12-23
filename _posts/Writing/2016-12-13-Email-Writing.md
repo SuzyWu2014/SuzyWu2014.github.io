@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Email"
+title: "Email Writing: Helpful sentences"
 description: ""
 category: Writing
 tags:  [Writing]
