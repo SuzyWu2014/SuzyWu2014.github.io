@@ -79,5 +79,3 @@ Perhaps I left something out...
 + Capitalization
 
 ### 发送前再添加收信人，避免误发送
-
-## 考虑文化差异
