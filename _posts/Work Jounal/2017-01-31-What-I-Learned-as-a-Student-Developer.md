@@ -7,26 +7,17 @@ tags:  [Journal]
 ---
 {% include JB/setup %}
 
-For the past year and a half, I've been working in two teams in IS at OSU as a student developer. My first year in ITIS team gave me an opportunity to work on a new opensourced [CoprHD project](coprhd.github.io) and collaborated with the community members and the developers from the industry actively. As the team leader, apart from the work assigned to me, I'm also responsible for tracking the progress of the team members, assuring the on-time delivery of a feature. Another portion of this project is to present the work to different audiences. Our team participated in two CoprHD developer summit and a Linux Storage Conference, giving presentation in two of them with the purposes varied from status update to product advocate.
+For the past year and a half, I've been working in two teams in IS at OSU as a student developer. My first year in ITIS team gave me an opportunity to work on the open source [CoprHD project](coprhd.github.io) and collaborate frequently with the community members and the developers from the industry. As the team leader, apart from the work assigned to me, I'm also responsible for tracking the progress of my team members, assuring the on-time delivery of the features. Giving presentations of our work based on different purposes to audiences from various backgrounds is another important part of this project.
 
-My role in the second team is one of developers in the team with a more diverse work, which allows me to grasp many skills in short amount of time. Similar as the previous work, presentations are also common. Knowledges are shared within the team by demoing or explaining your work to the team. I think what valued most of the first team is the world it showed me, and the second team helps me to.
+My role in the second team is one of developers in the team with a more diverse tasks, which allows me to grasp many skills in a short period of time. Similar as the previous work, presentations are also common. Knowledges are shared within the team by demoing or explaining your work to the team. On the other hand, I also went throught several interviews for the past year. Look back to my experiences of the interviews and my job, there are some tips I could share with the students who want to be developers, some of which I wish I could have done better as well.
 
-Another note from this period of work is to identify your thought process and learn things wisely.
+## Enhance your communication Skills
+I know this might sound cliche, but it is one of the most valuable skills that can help you to reach your goal whether it be getting the work done or getting the help you need. For example, being able to ask questions wisely will bring you the answer you need, avoid unnecessary mistakes or get out of the tar pits. In addition, email is another most common communication tool at work. A clear and concise email shows your professionality, also leading up to prompt replies.
 
-Besides the skills and experiences I earned from my job, more importantly, it showcases the most important and necessary skills set desired from the industry.
+## Presentation/Demo skills
+As decribed above, being capable of showing your work throught presentations is not just desirable but also a necassarity. During the interviews, it's very likely to be asked to introduce the projects you have done to the interviewers, while at work it's even more frequent to demonstrate your work to your team or even larger audience. Therefore, if you are able to deliver your ideas clearly or even vividly will be a big plus in the job market.
 
-## Presentation/Demo skills.
-Being able to show your work within the team or to a larger audience is not just desiable but also necassary skills.
+## technical Skills
+Technical skills are your core competencies, and it's very important to keep strengthening the skills you already have. However, Being able to learn new skills and learn them quickly on demand might be even more valuable. Generally, it is very common that you are not famillar some of the techniques used in your project, which can be a programming language, a framework or a tool. Being able to grasp the knowledge and applying them to work is also a demostration of your ability at work. Another suggestion is to be aware of your thought process and try to identify and form the most effective one for yourself. Thought process, such as how you learn things, how you debug and how you figure out a problem, will be changed over time along with your experience, and an awareness of it will help you improve your efficiency. This is also helpful for your interviews since a lot of interviewers try to identify your thought process from the way you answer their questions. In addition, Putting down the notes for the work you have done is one of the things that I wish I could have done better. No matter how confident you thought you would remember it, after leaving it aside for couple months or even weeks, everything will look completely new to you.
 
-## Be able to learn and learn it quickly
-
-## Asking questions wisely
-
-## Identify the thought process
-
-## Best practices for new tech
-
-## take notes of your work for later.
-
-
-
+In a nut shell, technical skills along with commucation skills are the way to become a professonal developer. I believe if one could continue enhancing the skills listed above and be able to show them to the employers, he/she will be a strong hire in the job market.
