@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Set up Sublime3 in Ubuntu"
+title: "Set up Oh-my-zsh in Ubuntu"
 description: ""
 category: Ubuntu
 tags:  [Ubuntu]
@@ -34,4 +34,5 @@ ZSH_THEME="agnoster"
 
 ## Terminal Profile
 
-Select one of Powerline fonts with 14pt
++ Select one of Powerline fonts with 14pt
++ resize: `170 * 20`
