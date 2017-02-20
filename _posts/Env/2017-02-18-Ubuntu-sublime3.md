@@ -13,6 +13,7 @@ tags:  [Ubuntu]
 
 + SidebarEnhancement
 + SublimeLinter
++ SublimeLinter-pep8
 + SublimeCodeIntel
 + SublimeHaskell
 + GitGutter
