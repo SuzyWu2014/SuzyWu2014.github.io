@@ -23,16 +23,16 @@ sudo shutdown -r 0
 
 # Configuration
 
-## Edit `~/.zshrc`
++ Edit `~/.zshrc`
+
 ```
 ZSH_THEME="agnoster"
 ```
 
-## Install Fonts
++ Install [Powerline fonts](https://github.com/powerline/fonts)
 
-[Powerline fonts](https://github.com/powerline/fonts)
++ Terminal Profile
+    - Select one of Powerline fonts with 14pt
+    - resize: `170 * 20`
 
-## Terminal Profile
-
-+ Select one of Powerline fonts with 14pt
-+ resize: `170 * 20`
++ install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
