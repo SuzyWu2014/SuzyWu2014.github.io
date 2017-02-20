@@ -27,6 +27,8 @@ tags:  [Ubuntu]
 
 # Configuration
 
+`Preferences -> Settings (User)`
+
 ```json
 {
     "added_words":
