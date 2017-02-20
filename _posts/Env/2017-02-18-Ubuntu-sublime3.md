@@ -9,18 +9,21 @@ tags:  [Ubuntu]
 
 # Packages
 
-SidebarEnhancement
-SublimeLinter
-SublimeCodeIntel
-SublimeHaskell
-GitGutter
-JSLint
-Markdown-editing
-Trailing-space
-Color-highlighter
-bracketHighlighter
-CTag
-(afterglow-theme)[https://github.com/YabataDesign/afterglow-theme]
+`[Ctrl+Shift+P] -> Install Packages`
+
++ SidebarEnhancement
++ SublimeLinter
++ SublimeCodeIntel
++ SublimeHaskell
++ GitGutter
++ JSLint
++ Markdown-editing
++ Trailing-space
++ Color-highlighter
++ bracketHighlighter
++ CTag
++ Anisble
++ [afterglow-theme](https://github.com/YabataDesign/afterglow-theme)
 
 # Configuration
 
