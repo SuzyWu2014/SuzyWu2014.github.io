@@ -7,6 +7,10 @@ tags:  [Ubuntu]
 ---
 {% include JB/setup %}
 
+# Ansible Role
+
+Run Ansible playbook: [Ubuntu Environment Set Up](https://github.com/SuzyWu2014/my-ansible-roles)
+
 # Packages
 
 `[Ctrl+Shift+P] -> Install Packages`
@@ -190,3 +194,10 @@ tags:  [Ubuntu]
 ]
 
 ```
+
+## Add Chinese Support
+
+[Enable sougou-pinyin in SublimeText 3](http://html5beta.com/page/ubuntu-14-04-install-fcitx-sougoupinyin-sublime-text-3-chinese-input-fix.html#)
+
++ Go to `/opt/sublime_text`
++ Run `sudo gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC`
