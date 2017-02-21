@@ -34,5 +34,6 @@ ZSH_THEME="agnoster"
 + Terminal Profile
     - Select one of Powerline fonts with 14pt
     - resize: `170 * 20`
+    - Colors: select Solarize-dark and modify from there
 
 + install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
