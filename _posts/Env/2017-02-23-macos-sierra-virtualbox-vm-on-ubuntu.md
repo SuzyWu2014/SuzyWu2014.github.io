@@ -28,9 +28,9 @@ Settings:
 + name: your_sierra_vm_name
 + type: Osx
 + version: Mac OS X 10.11 El Capitan (64-bit)
-+ Settings
++ Other
 
-![](https://github.com/SuzyWu2014/SuzyWu2014.github.io/blob/master/_posts/Env/pic/sierra-vm-setting.png)
+![settings](SuzyWu2014.github.io/_posts/Env/pic/sierra-vm-setting.png)
 
 ## Step5: Configure VM for MacOS (Very important!)
 
