@@ -30,7 +30,7 @@ Settings:
 + version: Mac OS X 10.11 El Capitan (64-bit)
 + Settings
 
-![](pic/sierra-vm-setting.png)
+![](https://github.com/SuzyWu2014/SuzyWu2014.github.io/blob/master/_posts/Env/pic/sierra-vm-setting.png)
 
 ## Step5: Configure VM for MacOS (Very important!)
 
@@ -52,3 +52,8 @@ Note: In the installer, Go to Utilities > Disk Utility. Select the VirtualBox di
 
 ## Step 7: Remove sierra.iso and restart VM.
 
+## Reference
+
+See also:
++ [macOS VirtualBox VM Instructions](https://github.com/geerlingguy/macos-virtualbox-vm)
++ [Run Mac Osx on Virtualbox on Ubuntu](https://getpocket.com/a/read/1490886679)
