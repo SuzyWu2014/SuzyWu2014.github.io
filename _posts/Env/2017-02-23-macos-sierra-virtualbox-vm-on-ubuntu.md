@@ -13,7 +13,10 @@ This should be done in you Mac and the installer will be placed in `/Application
 
 ## Step 2: Prepare Sierra iso
 
+Use [geerlingguy's script](https://github.com/geerlingguy/macos-virtualbox-vm) to prepare a sierra iso file.
 ```bash
+git clone https://github.com/geerlingguy/macos-virtualbox-vm.git
+cd macos-virtualbox-vm
 chmod +x prepare-iso.sh
 ./prepare-iso.sh /Applications/Install\ macOS Sierra.app /Users/suzy/sierra.iso
 ```
