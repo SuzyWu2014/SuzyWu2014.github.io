@@ -28,7 +28,7 @@ sudo shutdown -r 0
 ```
 ZSH_THEME="agnoster"
 
-plugins=(git, zsh-autosuggestions, gitfast)
+plugins=(git zsh-autosuggestions)
 ```
 
 + Install [Powerline fonts](https://github.com/powerline/fonts)

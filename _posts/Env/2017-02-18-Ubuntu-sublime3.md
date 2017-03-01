@@ -28,7 +28,7 @@ Run Ansible playbook: [Ubuntu Environment Set Up](https://github.com/SuzyWu2014/
 + Color-highlighter
 + bracketHighlighter
 + CTag
-+ Anisble
++ ansible
 + [afterglow-theme](https://github.com/YabataDesign/afterglow-theme)
 
 # Configuration
