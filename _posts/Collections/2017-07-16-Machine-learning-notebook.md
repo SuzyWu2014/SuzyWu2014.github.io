@@ -17,7 +17,7 @@ The field of study that gives computers the ability to learn without being expli
 
 A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E. - by Tom Mitchell.
 
-Example:
+#### Example:
 E = the experience of playing many games of checkers
 
 T = the task of playing checkers.
@@ -84,7 +84,8 @@ classification problem: y can take on only a small number of discrete values.
 
 We can measure the accuracy of our hypothesis function by using a cost function.
 
-$J(\Theta_0, \Theta _1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\Theta }(x_i) - y_i))^{2}$
+\\[J(\Theta_0, \Theta _1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\Theta }(x_i) - y_i))^{2}\\]
+
 
 
 
