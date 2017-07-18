@@ -61,7 +61,30 @@ Clustering: Take a collection of 1,000,000 different genes, and find a way to au
 
 Non-clustering: The "Cocktail Party Algorithm", allows you to find structure in a chaotic environment. (i.e. identifying individual voices and music from a mesh of sounds at a cocktail party).
 
+# Linear Regression
 
+### Notations:
++ `x(i)`: input variables
++ `y(i)`: output or target variables that we are trying to predict.
++ `(x_i, y_i)`: training example
++ a list of training example: training set
++ `(i)`: index into the training set
++ X: space of input values
++ Y: spance of output values
+
+### Supervised problem:
+Given a training set, to learn a funciton `h: X -> Y` so that h(x) is a good predictor for the corresponding value of y. This function is called hypothesis.
+
+### Regression problem vs classification problem
+Regression problem: the target variable that we're trying to predict is continuous.
+classification problem: y can take on only a small number of discrete values.
++ example: if given the living area, we wanted to predict if a dwelling is a house or an apartment
+
+# Cost Function
+
+We can measure the accuracy of our hypothesis function by using a cost function.
+
+$J(\Theta_0, \Theta _1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\Theta }(x_i) - y_i))^{2}$
 
 
 
