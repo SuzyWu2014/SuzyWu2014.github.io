@@ -88,7 +88,7 @@ $$J(\Theta_0, \Theta _1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\Theta }(x_i) - y_i))^{
 
 We should try to minimize the cost funciton.
 
-
+(TODO: fix style/syntax)
 
 
 
