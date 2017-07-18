@@ -84,7 +84,9 @@ classification problem: y can take on only a small number of discrete values.
 
 We can measure the accuracy of our hypothesis function by using a cost function.
 
-$J(\Theta_0, \Theta _1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\Theta }(x_i) - y_i))^{2}$
+$$J(\Theta_0, \Theta _1) = \frac{1}{2m}\sum_{i=1}^{m}(h_{\Theta }(x_i) - y_i))^{2}$$
+
+We should try to minimize the cost funciton.
 
 
 
